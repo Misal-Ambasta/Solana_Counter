@@ -6,11 +6,12 @@ use solana_program::program_error::ProgramError;
 pub struct UpdateArgs {
     pub value: u32,
 }
-
+#[derive(Debug, BorshDeserialize, BorshSerialize)]
 pub struct UpdateIncrementArgs {
     pub value: u32,
 }
 
+#[derive(Debug, BorshDeserialize, BorshSerialize)]
 pub struct UpdateDecrementArgs {
     pub value: u32,
 }
